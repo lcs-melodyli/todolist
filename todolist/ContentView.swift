@@ -14,7 +14,7 @@ struct ContentView: View {
         NavigationView{
             VStack{
                 List{
-                    
+                singleitem(title: "Study for chemistry test")
                 }
                 .searchable(text: $searchText)
                 HStack{}
