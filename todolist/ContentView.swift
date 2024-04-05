@@ -17,7 +17,9 @@ struct ContentView: View {
                 singleitem(title: "Study for chemistry test")
                 }
                 .searchable(text: $searchText)
-                HStack{}
+                HStack{
+                    
+                }
                     .padding(20)
             }
             .navigationTitle("To do")

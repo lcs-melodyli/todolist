@@ -12,6 +12,7 @@
 		213B62142BC0392800DDC73F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213B62132BC0392800DDC73F /* Assets.xcassets */; };
 		213B62172BC0392800DDC73F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213B62162BC0392800DDC73F /* Preview Assets.xcassets */; };
 		213B62212BC03A6B00DDC73F /* singleitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213B62202BC03A6B00DDC73F /* singleitem.swift */; };
+		213B62232BC03C5900DDC73F /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213B62222BC03C5900DDC73F /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		213B62132BC0392800DDC73F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		213B62162BC0392800DDC73F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		213B62202BC03A6B00DDC73F /* singleitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleitem.swift; sourceTree = "<group>"; };
+		213B62222BC03C5900DDC73F /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				213B620F2BC0392500DDC73F /* todolistApp.swift */,
 				213B62112BC0392500DDC73F /* ContentView.swift */,
 				213B62202BC03A6B00DDC73F /* singleitem.swift */,
+				213B62222BC03C5900DDC73F /* SwiftUIView.swift */,
 				213B62132BC0392800DDC73F /* Assets.xcassets */,
 				213B62152BC0392800DDC73F /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				213B62212BC03A6B00DDC73F /* singleitem.swift in Sources */,
 				213B62122BC0392500DDC73F /* ContentView.swift in Sources */,
+				213B62232BC03C5900DDC73F /* SwiftUIView.swift in Sources */,
 				213B62102BC0392500DDC73F /* todolistApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
