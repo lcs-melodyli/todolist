@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var newItemDescription: String = ""
+    @State var searchText = ""
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView{
+            VStack{
+                List{
+                    
+                }
+                .searchable(text: $searchText)
+                HStack{}
+                    .padding(20)
+            }
+            .navigationTitle("To do")
         }
-        .padding()
     }
 }
 
