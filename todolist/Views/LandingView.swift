@@ -22,9 +22,10 @@ struct LandingView: View {
                 HStack{
                     TextField("Enter a to-do item", text: $newItemDescription)
                     Button("Add"){
-                        
+                        createToDo(withTitle: newItemDescription)
                     }
                     .font(.caption)
+                    .disabled(newItemDescription.isEmpty ==/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                 }
                 .padding(20)
                 
@@ -34,6 +35,12 @@ struct LandingView: View {
             
                 
             }
+    func createToDo(withTitle title : String){
+        let todo = ToDoItem(
+            title: title, done: false
+        )
+        todos.append(todo)
+    }
         }
   
 #Preview {
