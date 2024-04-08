@@ -14,7 +14,7 @@ struct LandingView: View {
     var body: some View {
         NavigationView{
             VStack{
-                List(todos){ todo in
+                List($todos){ $todo in
                     singleitem(currentItem: todo)
                         .swipeActions{
                             Button(
@@ -25,7 +25,9 @@ struct LandingView: View {
                                 }
                             )
                         }
-                    
+                        .onTapGesture {
+                            todo.done.toggle()
+                        }
                 }
                 .searchable(text: $searchText)
                 HStack{
