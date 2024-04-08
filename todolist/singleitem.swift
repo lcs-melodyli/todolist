@@ -8,24 +8,21 @@
 import SwiftUI
 
 struct singleitem: View {
-    let title: String
+    let currentItem: ToDoItem
     
     var body: some View {
-        HStack{
-            Image(systemName: "circle")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 25)
-                 VStack {
-                Text(title)
-                    .font(.title3)
-                    .bold()
-            }
-        }
+        Label(title: {
+            Text(currentItem.title)
+        }, icon: {
+            Image(systemName: currentItem.done == true ? "checkmark.circle" : "circle")
+        })
             
     }
 }
 
 #Preview {
-    singleitem(title: "HELLO")
+    List{
+        singleitem(currentItem: firstItem)
+        singleitem(currentItem: SecondItem)
+    }
 }
