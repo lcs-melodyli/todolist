@@ -12,7 +12,6 @@
 		213B62142BC0392800DDC73F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213B62132BC0392800DDC73F /* Assets.xcassets */; };
 		213B62172BC0392800DDC73F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213B62162BC0392800DDC73F /* Preview Assets.xcassets */; };
 		213B62212BC03A6B00DDC73F /* singleitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213B62202BC03A6B00DDC73F /* singleitem.swift */; };
-		2155F7332BC46BEE00325CE5 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2155F7322BC46BEE00325CE5 /* ItemView.swift */; };
 		2155F7352BC46CA400325CE5 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2155F7342BC46CA400325CE5 /* ToDoItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +22,6 @@
 		213B62132BC0392800DDC73F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		213B62162BC0392800DDC73F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		213B62202BC03A6B00DDC73F /* singleitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleitem.swift; sourceTree = "<group>"; };
-		2155F7322BC46BEE00325CE5 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		2155F7342BC46CA400325CE5 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				213B62112BC0392500DDC73F /* LandingView.swift */,
-				2155F7322BC46BEE00325CE5 /* ItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,7 +171,6 @@
 				213B62122BC0392500DDC73F /* LandingView.swift in Sources */,
 				2155F7352BC46CA400325CE5 /* ToDoItem.swift in Sources */,
 				213B62102BC0392500DDC73F /* todolistApp.swift in Sources */,
-				2155F7332BC46BEE00325CE5 /* ItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

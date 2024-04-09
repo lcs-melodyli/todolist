@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct singleitem: View {
-    let currentItem: ToDoItem
+    @Binding var currentItem: ToDoItem
     
     var body: some View {
         Label(title: {
             Text(currentItem.title)
         }, icon: {
             Image(systemName: currentItem.done == true ? "checkmark.circle" : "circle")
+                .onTapGesture {
+                    currentItem.done.toggle()
+                }
         })
             
     }
@@ -22,7 +25,7 @@ struct singleitem: View {
 
 #Preview {
     List{
-        singleitem(currentItem: firstItem)
-        singleitem(currentItem: SecondItem)
+        singleitem(currentItem: Binding.constant(firstItem))
+        singleitem(currentItem: Binding.constant(SecondItem))
     }
 }
