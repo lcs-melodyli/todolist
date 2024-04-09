@@ -23,9 +23,9 @@ struct singleitem: View {
     }
 }
 
-#Preview {
-    List{
-        singleitem(currentItem: Binding.constant(firstItem))
-        singleitem(currentItem: Binding.constant(SecondItem))
-    }
-}
+//#Preview {
+    //List{
+        //singleitem(currentItem: Binding.constant(firstItem))
+        //singleitem(currentItem: Binding.constant(SecondItem))
+    //}
+//}
