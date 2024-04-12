@@ -24,9 +24,14 @@ struct singleitem: View {
     }
 }
 
-//#Preview {
-    //List{
-        //singleitem(currentItem: Binding.constant(firstItem))
-        //singleitem(currentItem: Binding.constant(SecondItem))
-    //}
-//}
+#Preview {
+    
+    let container = ToDoItem.preview
+    
+    return List {
+        singleitem(currentItem: ToDoItem.someItem)
+        singleitem(currentItem: ToDoItem.anotherItem)
+    }
+    .modelContainer(container)
+    
+}
