@@ -8,7 +8,7 @@
 import SwiftData
 
 @Model
-class ToDoItem: Identifiable{
+class ToDoItem: Identifiable {
     var title: String
     var done: Bool
     init(title: String, done: Bool) {
@@ -18,12 +18,27 @@ class ToDoItem: Identifiable{
     
 }
 
-let firstItem = ToDoItem(title: "Study for chemistry quiz", done: false )
-let SecondItem = ToDoItem(title: "Finish computer science assignment", done: true )
-let ThirdItem = ToDoItem(title: "Go for a run around campus", done: true )
+extension ToDoItem {
+    
+    @MainActor
+    static var preview: ModelContainer {
+        
+        let container = try! ModelContainer(
+            for: ToDoItem.self,
+            configurations: ModelConfiguration(isStoredInMemoryOnly: true)
+        )
+        
+        // Add mock data
+        container.mainContext.insert(
+            ToDoItem(title: "Go for a walk", done: false)
+        )
+        container.mainContext.insert(
+            ToDoItem(title: "Have a nap", done: true)
+        )
+        container.mainContext.insert(
+            ToDoItem(title: "Call mom", done: false)
+        )
 
-let exampleItems = [
-   firstItem,
-    SecondItem,
-    ThirdItem,
-]
+        return container
+    }
+}

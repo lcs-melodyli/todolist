@@ -5,6 +5,7 @@
 //  Created by 利梓萌 on 2024-04-05.
 //
 
+import SwiftData
 import SwiftUI
 
 struct singleitem: View {

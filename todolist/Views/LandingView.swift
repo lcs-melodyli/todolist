@@ -12,7 +12,7 @@ struct LandingView: View {
     @State var newItemDescription: String = ""
     @State var searchText = ""
     @Environment(\.modelContext) var modelContext
-    @Query var todos: [singleitem]
+    @Query var todos: [ToDoItem]
     var body: some View {
         NavigationView{
             VStack{
@@ -36,10 +36,13 @@ struct LandingView: View {
                 
             }
             .navigationTitle("To do")
+            .onAppear {
+                printCommandToOpenDatabaseFile()
             }
-            
-                
-            }
+        }
+        
+        
+    }
     func createToDo(withTitle title : String){
         let todo = ToDoItem(
             title: title, done: false
@@ -47,12 +50,13 @@ struct LandingView: View {
         modelContext.insert(todo)
     }
     func removeRows(at offsets: IndexSet) {
-       for offset in offsets {
+        for offset in offsets {
             modelContext.delete(todos[offset])
         }
     }
-        }
-  
-//#Preview {
-    //LandingView()
-//}
+}
+
+#Preview {
+LandingView()
+        .modelContainer(ToDoItem.preview)
+}
